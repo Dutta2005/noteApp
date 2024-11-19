@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes | NotesWorlds.com </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="css/tab.css">
+    <link rel="stylesheet" media="screen and (max-width: 912px)" href="css/ipad.css">
+    <link rel="stylesheet" media="screen and (max-width: 540px)" href="css/phone.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+
+    <nav id="navigation">
+        <div id="logo">
+            <img src="img/logo.png" alt="NotesWorlds Logo" id="logoimg">
+            <span class="posleft" id="logohead">NotesWorld</span>
+        </div>
+
+        <ul>
+            <li class="navitems" id="home"><a href="index.html">Home</a></li>
+            <li class="navitems" id="notes"><a href="notes.html">My Notes</a></li>
+            <li class="navitems" id="contact"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Add Notes -->
+    <div class="formcontainer">
+        <div class="float_left">
+            <form action="#" class="notes">
+
+                <h2 class="h-secondary" id="AddNote">Add Note</h2>
+                <input type="text" placeholder="Heading" class="notehead" id="noteheading">
+
+                <textarea id="note" class="note" name="Write Something" cols="30" rows="10"
+                    placeholder="Write Something"></textarea>
+
+                <div class="row">
+                    <button id="submitnote" class="notebtn" type="submit">Save</button>
+                    <button id="clearnote" class="notebtn" type="submit" onclick="clearstorage()">Clear All</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="float_right">
+            <span>
+                Organize Your Thoughts
+            </span>
+
+            <span>
+                Be More Productive
+            </span>
+
+            <span>
+                Be Successfull in life
+            </span>
+        </div>
+    </div>
+
+    <!-- Display Notes -->
+
+    <h2 class="h-secondary text-center">My Notes</h2>
+    <div class="container">
+        <div class="notescontainer">
+            <div class="col-6" id="notesbody">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

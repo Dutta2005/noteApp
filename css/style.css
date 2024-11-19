@@ -1,0 +1,371 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Borel', cursive;
+    background: url('../img/bg.jpg') no-repeat;
+}
+
+/* Navigation Menu */
+
+#navigation{
+    width: 100%;
+}
+
+#navigation::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    height: 94px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+#navigation #logo img {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    position: absolute;
+    top: 7px;
+    left: 0px;
+}
+
+#navigation #logo .posleft {
+    position: absolute;
+    top: 19px;
+    left: 71px;
+    padding: 5px;
+    font-size: 2rem;
+    color: #1f8c35;
+}
+
+#navigation ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#navigation ul li {
+    padding: 4px 10px;
+    margin: 25px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#navigation ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Index.html */
+
+.center {
+    display: grid;
+    grid-template-areas:
+        'div div div img';
+}
+
+.maincenter {
+    grid-area: div;
+    position: relative;
+    margin: 40px;
+    padding: 50px;
+    width: 75%;
+    left: 20px;
+
+}
+
+#mainimg {
+    grid-area: img;
+    padding: 34px;
+    width: 50%;
+    position: relative;
+    right: 135px;
+    top: 149px;
+}
+
+/* Notes.html*/
+
+.formcontainer{
+    overflow: hidden;
+}
+
+/* Add Notes Section */
+
+.notes {
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-gap: 5px;
+    justify-content: start;
+    margin: 30px;
+    width: 50%;
+}
+
+.float_left{
+    float: left;
+}
+
+#AddNote {
+    padding: 10px 49px;
+    font-family: 'Borel', cursive;
+}
+
+#noteheading {
+    border: 2px;
+    box-shadow: 4px 4px 10px;
+    border-radius: 19px;
+    width: 350px;
+    height: 41px;
+    padding: 2px 10px;
+    margin: 14px 43px;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: 'Borel', cursive;
+}
+
+#note {
+    border: 2px;
+    box-shadow: 4px 4px 10px;
+    border-radius: 19px;
+    width: 350px;
+    height: 250px;
+    padding: 2px 10px;
+    margin: 14px 43px;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: 'Borel', cursive;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.float_right{
+    float: right;
+    margin: 98px 50px;
+    padding: 44px 93px;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.float_right span{
+    padding: 5px 4px;
+    margin: 5px 5px;
+    font-family: 'Borel', cursive;
+}
+
+/* Display Notes Section */
+
+.container .notescontainer .col-6 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-gap: 60px;
+    margin: 10px 2px;
+    justify-items: center;
+    align-items: center;
+}
+
+.container .notescontainer .col-6 .p-3 {
+    background-color: #f7e94296;
+    height: 250px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .notescontainer .col-6 .p-3 h3 {
+    padding: 3px;
+    text-decoration: underline;
+}
+
+.container .notescontainer .col-6 .p-3 div {
+    padding: 3px;
+}
+
+/* Contact.html */
+
+.contact_center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Contact Image */
+
+.main_contact {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_center .main_contact img {
+    width: 60%;
+}
+
+.contact_center .main_contact h2 {
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+/* Contact Form */
+
+.contact_center .contactform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_center .contactform form {
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-gap: 5px;
+    margin: 20px;
+}
+
+.contact_center .contactform form .formlabels {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Borel', cursive;
+}
+
+.contact_center .contactform form h2{
+    padding: 12px 0px;
+    text-decoration: underline;
+    font-family: 'Borel', cursive;
+}
+
+.contact_center .contactform form .formitems {
+    border: 2px;
+    box-shadow: 4px 4px 10px;
+    border-radius: 19px;
+    padding: 4px 10px;
+    margin: 14px 0px;
+    font-size: 1.1rem;
+    text-align: justify;
+    font-family: 'Borel', cursive;
+}
+
+/* Buttons */
+
+.maincenter a button {
+    padding: 15px;
+    margin: 30px;
+    background-color: #82c50e;
+    margin-left: 11px;
+    border: 2px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-family: 'Borel', cursive;
+    transition: .5s ease;
+}
+
+.maincenter a button:hover {
+    cursor: pointer;
+    background-color: #F4F27E;
+}
+
+#submitnote {
+    width: 69px;
+    height: 33px;
+    border: 2px;
+    box-shadow: 4px 4px 10px;
+    border-radius: 10px;
+    margin: 3px 50px;
+    padding: 6px 10px;
+    font-size: 1.1rem;
+    font-family: 'Borel', cursive;
+}
+
+#submitnote:hover {
+    cursor: pointer;
+}
+
+#clearnote {
+    width: 104px;
+    height: 33px;
+    border: 2px;
+    box-shadow: 4px 4px 10px;
+    border-radius: 10px;
+    margin: 3px 50px;
+    padding: 6px 10px;
+    font-size: 1.1rem;
+    font-family: 'Borel', cursive;
+}
+
+#clearnote:hover {
+    cursor: pointer;
+}
+
+.delbtn {
+    width: 61px;
+    height: 27px;
+    border: 2px;
+    box-shadow: 2px 2px 8px;
+    border-radius: 10px;
+    margin: 3px 50px;
+    padding: 5px 7px;
+    font-size: 1rem;
+    font-family: 'Borel', cursive;
+}
+
+.delbtn:hover {
+    cursor: pointer;
+}
+
+.sendbtn{
+    width: 73px;
+    height: 33px;
+    border: 2px;
+    box-shadow: 4px 4px 10px;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 6px 7px;
+    font-size: 1.1rem;
+    font-family: 'Borel', cursive;
+}
+
+.sendbtn:hover{
+    cursor: pointer;
+}
+
+/* Utility Classes */
+
+.h-primary {
+    font-size: 2.29rem;
+    padding: 12px;
+    font-family: 'Borel', cursive;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Borel', cursive;
+}
+
+.para {
+    font-size: 1.1rem;
+    padding: 12px;
+    font-family: 'Borel', cursive;
+}
+
+.text-center {
+    text-align: center;
+}

@@ -1,0 +1,48 @@
+
+/* Home.html */
+
+.maincenter {
+    width: 50%;
+}
+
+#mainimg {
+    width: 75%;
+}
+
+/* Notes.html */
+
+.float_left {
+    float: left;
+    margin: 3px 9px;
+}
+
+.float_right {
+    float: right;
+    margin: 98px 30px;
+    padding: 60px 38px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.float_right span{
+    padding: 5px 4px;
+    margin: 5px 5px;
+    width: max-content;
+}
+
+.formcontainer {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container .notescontainer .col-6 {
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 60px;
+    margin: 10px 2px;
+}
+
+.container .notescontainer .col-6 .p-3 {
+    margin: 2px 24px;
+}

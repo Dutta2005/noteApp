@@ -1,0 +1,39 @@
+/* Navgigation Bar */
+
+#navigation::before {
+    height: 125px;
+}
+
+#navigation #logo {
+    margin: 2px 10px;
+}
+
+#navigation ul {
+    margin-right: 25px;
+    margin-top: 70px;
+}
+
+#navigation ul li {
+    padding: 4px 2px;
+    margin: 8px 2px;
+}
+
+/* Index.html */
+
+.maincenter {
+    width: fit-content;
+    margin: 0px;
+    padding: 6px;
+}
+
+/* Notes.html */
+
+.container .notescontainer .col-6 {
+    grid-template-columns: 2fr;
+}
+
+/* Contact.html */
+
+.contact_center .main_contact h2 {
+    text-align: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | NotesWorlds.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="css/tab.css">
+    <link rel="stylesheet" media="screen and (max-width: 912px)" href="css/ipad.css">
+    <link rel="stylesheet" media="screen and (max-width: 540px)" href="css/phone.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+
+    <nav id="navigation">
+        <div id="logo">
+            <img src="img/logo.png" alt="NotesWorlds Logo" id="logoimg">
+            <span class="posleft" id="logohead">NotesWorld</span>
+        </div>
+
+        <ul>
+            <li class="navitems" id="home"><a href="index.html">Home</a></li>
+            <li class="navitems" id="notes"><a href="notes.html">My Notes</a></li>
+            <li class="navitems" id="contact"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+
+    <div class="contact_center">
+        <div class="main_contact">
+            <img src="img/error.png" alt="">
+            <h2 class="h-secondary">Report your Issue or Suggestions and Help us.</h2>
+        </div>
+        <div class="contactform">
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="61065e4d-84dc-4a24-804a-0707beb92681">
+                <h2 class="h-secondary">Contact Us</h2>
+
+                <label for="forName" class="formlabels">Name:</label>
+                <input type="text" id="forName" placeholder="Name" class="formitems">
+
+                <label for="forEmail" class="formlabels">E-Mail:</label>
+                <input type="email" id="forEmail" placeholder="E-Mail" class="formitems">
+
+                <label for="forPhone" class="formlabels">Mobile Number:</label>
+                <input type="phone" value="" id="forPhone" placeholder="Mobile Number" class="formitems">
+
+                <label for="forIssue" class="formlabels">Issue:</label>
+                <textarea name="issue" id="forIssue" cols="30" rows="10" placeholder="What is your Problem"
+                    class="formitems"></textarea>
+
+                <button class="sendbtn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
